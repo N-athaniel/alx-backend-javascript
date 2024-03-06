@@ -1,10 +1,9 @@
 export default function taskBlock(trueOrFalse) {
-  let task = false; // Use 'let' instead of 'var'
-  let task2 = true; // Use 'let' instead of 'var'
+  const task = false; // Use 'const' instead of 'let'
+  const task2 = true; // Use 'const' instead of 'let'
 
   if (trueOrFalse) {
-    task = true; // No need to redeclare, just assign the new value
-    task2 = false; // No need to redeclare, just assign the new value
+    // No need to reassign, as 'const' variables cannot be reassigned
   }
 
   return [task, task2];
